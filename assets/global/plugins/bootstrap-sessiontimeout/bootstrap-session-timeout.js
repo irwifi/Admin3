@@ -88,7 +88,8 @@
             // "Stay Connected" button click
             $('#session-timeout-dialog').on('hide.bs.modal', function() {
                 // Restart session timer
-                startSessionTimer();
+                // startSessionTimer();
+                clearTimeout(timer);
             });
         }
 
